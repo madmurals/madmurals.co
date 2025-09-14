@@ -116,8 +116,7 @@
             Madmurals.co
         </a>
         <nav class="hidden md:flex space-x-6 lg:space-x-10">
-            <a href="#services" class="hover:text-[--accent-color] transition-colors duration-300">Services</a>
-            <a href="#gallery" class="hover:text-[--accent-color] transition-colors duration-300">Gallery</a>
+            <a href="#portfolio" class="hover:text-[--accent-color] transition-colors duration-300">Our Work & Services</a>
             <a href="#contact" class="hover:text-[--accent-color] transition-colors duration-300">Contact Us</a>
         </nav>
         <button class="md:hidden p-2 text-gray-600 focus:outline-none">
@@ -148,98 +147,84 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="py-16 bg-white">
+        <!-- Merged Services and Gallery Section -->
+        <section id="portfolio" class="py-16 bg-[--secondary-bg-color]">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[--primary-color] heading-font">OUR SERVICES</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Service Card 1: Wall Murals -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105">
-                        <div class="mb-4 text-5xl">🖼️</div>
-                        <h3 class="text-2xl font-semibold mb-3 heading-font">WALL MURALS</h3>
-                        <p class="text-gray-600">
-                            Custom, hand-painted murals for homes and businesses. We create stunning artwork to fit any style, from vibrant designs to subtle accents.
-                        </p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[--primary-color] heading-font">OUR WORK & SERVICES</h2>
+                <div class="grid md:grid-cols-1 gap-12">
+                    <!-- Wall Murals Section -->
+                    <div>
+                        <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105 mb-8">
+                            <div class="mb-4 text-5xl">🖼️</div>
+                            <h3 class="text-2xl font-semibold mb-3 heading-font">WALL MURALS</h3>
+                            <p class="text-gray-600">
+                                Custom, hand-painted murals for homes and businesses. We create stunning artwork to fit any style, from vibrant designs to subtle accents.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/DjxNqUo.jpeg')">
+                                <img src="https://i.imgur.com/DjxNqUo.jpeg" alt="Sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/82FcWMp.jpeg')">
+                                <img src="https://i.imgur.com/82FcWMp.jpeg" alt="A second sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/XGms4ZF.jpeg')">
+                                <img src="https://i.imgur.com/XGms4ZF.jpeg" alt="A third sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/pn5zA1Y.jpeg')">
+                                <img src="https://i.imgur.com/pn5zA1Y.jpeg" alt="A fourth sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/eM52eEz.jpeg')">
+                                <img src="https://i.imgur.com/eM52eEz.jpeg" alt="A fifth sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/AHoTpPP.jpeg')">
+                                <img src="https://i.imgur.com/AHoTpPP.jpeg" alt="A colorful geometric and abstract wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/fI3hes9.jpeg')">
+                                <img src="https://i.imgur.com/fI3hes9.jpeg" alt="A detailed wall mural of a cat head with intricate patterns" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/XiWiTP5.jpeg')">
+                                <img src="https://i.imgur.com/XiWiTP5.jpeg" alt="A black and white mural of a woman's face with floral details" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                        </div>
                     </div>
-                    <!-- Service Card 2: Window Painting -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105">
-                        <div class="mb-4 text-5xl">🎨</div>
-                        <h3 class="text-2xl font-semibold mb-3 heading-font">WINDOW PAINTING</h3>
-                        <p class="text-gray-600">
-                            Seasonal and promotional window art. Perfect for holidays, special events, or adding a festive touch to your storefront.
-                        </p>
-                    </div>
-                    <!-- Service Card 3: Custom Artwork -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105">
-                        <div class="mb-4 text-5xl">✨</div>
-                        <h3 class="text-2xl font-semibold mb-3 heading-font">CUSTOM ARTWORK</h3>
-                        <p class="text-gray-600">
-                            Whether it's for a special project or a unique idea, we work with you to bring your artistic vision to life on any surface.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Gallery Section heading moved outside the beige container -->
-        <div class="container mx-auto px-6 text-center pt-16">
-            <p class="text-3xl md:text-4xl font-semibold mb-6 text-[--primary-color] heading-font">OUR WORK</p>
-        </div>
-
-        <!-- Gallery Section with Grid Layout for uniform image sizing -->
-        <section id="gallery" class="py-16 bg-[--secondary-bg-color]">
-            <div class="container mx-auto px-6 text-center">
-                
-                <!-- Wall Murals Section -->
-                <div class="mb-12">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-[--primary-color] heading-font">Wall Murals</h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/DjxNqUo.jpeg')">
-                            <img src="https://i.imgur.com/DjxNqUo.jpeg" alt="Sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                    <!-- Window Painting Section -->
+                    <div>
+                        <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105 mb-8 mt-12">
+                            <div class="mb-4 text-5xl">🎨</div>
+                            <h3 class="text-2xl font-semibold mb-3 heading-font">STOREFRONT & WINDOW MURALS</h3>
+                            <p class="text-gray-600">
+                                We transform storefronts and commercial spaces with vibrant, hand-painted window art. From eye-catching seasonal displays to intricate promotional designs, we help you captivate customers and stand out.
+                            </p>
                         </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/82FcWMp.jpeg')">
-                            <img src="https://i.imgur.com/82FcWMp.jpeg" alt="A second sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/XGms4ZF.jpeg')">
-                            <img src="https://i.imgur.com/XGms4ZF.jpeg" alt="A third sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/pn5zA1Y.jpeg')">
-                            <img src="https://i.imgur.com/pn5zA1Y.jpeg" alt="A fourth sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/eM52eEz.jpeg')">
-                            <img src="https://i.imgur.com/eM52eEz.jpeg" alt="A fifth sample wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/AHoTpPP.jpeg')">
-                            <img src="https://i.imgur.com/AHoTpPP.jpeg" alt="A colorful geometric and abstract wall mural" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/fI3hes9.jpeg')">
-                            <img src="https://i.imgur.com/fI3hes9.jpeg" alt="A detailed wall mural of a cat head with intricate patterns" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                         <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/XiWiTP5.jpeg')">
-                            <img src="https://i.imgur.com/XiWiTP5.jpeg" alt="A black and white mural of a woman's face with floral details" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/rk5FYEA.jpeg')">
+                                <img src="https://i.imgur.com/rk5FYEA.jpeg" alt="Valentine's day window painting with flowers and text" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/yEcXvhs.jpeg')">
+                                <img src="https://i.imgur.com/yEcXvhs.jpeg" alt="Lion head window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/E1ufBIa.jpeg')">
+                                <img src="https://i.imgur.com/E1ufBIa.jpeg" alt="Skull and flowers window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
+                            <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/er3cka2.jpeg')">
+                                <img src="https://i.imgur.com/er3cka2.jpeg" alt="Another lion head window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Window Painting Section -->
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-[--primary-color] heading-font">Window Painting</h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/rk5FYEA.jpeg')">
-                             <img src="https://i.imgur.com/rk5FYEA.jpeg" alt="Valentine's day window painting with flowers and text" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/yEcXvhs.jpeg')">
-                            <img src="https://i.imgur.com/yEcXvhs.jpeg" alt="Lion head window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/E1ufBIa.jpeg')">
-                            <img src="https://i.imgur.com/E1ufBIa.jpeg" alt="Skull and flowers window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="relative w-full aspect-square cursor-pointer" onclick="openModal('https://i.imgur.com/er3cka2.jpeg')">
-                            <img src="https://i.imgur.com/er3cka2.jpeg" alt="Another lion head window painting" class="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg">
+                    <!-- Custom Artwork Card -->
+                    <div>
+                        <div class="bg-white rounded-2xl shadow-xl p-8 transform transition-transform duration-300 hover:scale-105 mb-8 mt-12">
+                            <div class="mb-4 text-5xl">✨</div>
+                            <h3 class="text-2xl font-semibold mb-3 heading-font">CUSTOM ARTWORK</h3>
+                            <p class="text-gray-600">
+                                Whether it's for a special project or a unique idea, we work with you to bring your artistic vision to life on any surface.
+                            </p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -250,11 +235,56 @@
                 <p class="max-w-xl mx-auto mb-8 text-gray-600">
                     Tell us about your project and we'll get back to you with a free, no-obligation estimate.
                 </p>
-                <form id="contact-form" action="https://formspree.io/f/xjkezqnq" method="POST" class="max-w-2xl mx-auto space-y-6">
-                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
-                    <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
-                    <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300">
-                    <textarea name="message" placeholder="Tell us about your mural, including the size of the wall/window and your inspiration." rows="5" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required></textarea>
+                <p class="text-sm text-red-500 mb-2">* indicates a mandatory field</p>
+                <form id="contact-form" action="https://formspree.io/f/xjkezqnq" method="POST" class="max-w-2xl mx-auto space-y-6" enctype="multipart/form-data">
+                    <div>
+                        <label for="name" class="block text-left text-sm font-medium text-gray-700 mb-1">Your Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-left text-sm font-medium text-gray-700 mb-1">Your Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="_replyto" placeholder="Your Email" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-left text-sm font-medium text-gray-700 mb-1">Your Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="city" class="block text-left text-sm font-medium text-gray-700 mb-1">Your City <span class="text-red-500">*</span></label>
+                        <input type="text" id="city" name="city" placeholder="Your City" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
+                    </div>
+                    
+                    <div>
+                        <label for="service_type" class="block text-left text-sm font-medium text-gray-700 mb-1">Service <span class="text-red-500">*</span></label>
+                        <select id="service_type" name="service_type" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
+                            <option value="" disabled selected>Select the service you are interested in...</option>
+                            <option value="Wall Murals">Wall Murals</option>
+                            <option value="Storefront & Window Murals">Storefront & Window Murals</option>
+                            <option value="Custom Artwork">Custom Artwork</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="timeline" class="block text-left text-sm font-medium text-gray-700 mb-1">Timeline <span class="text-red-500">*</span></label>
+                        <select id="timeline" name="timeline" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required>
+                            <option value="" disabled selected>When do you need the artwork completed by?</option>
+                            <option value="Within 1 week">Within 1 week</option>
+                            <option value="2-4 weeks">2-4 weeks</option>
+                            <option value="1-2 months">1-2 months</option>
+                            <option value="Flexible / No rush">Flexible / No rush</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-left text-sm font-medium text-gray-700 mb-1">Message <span class="text-red-500">*</span></label>
+                        <textarea id="message" name="message" placeholder="Describe your project, design vision, and any approximate dimensions." rows="5" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300" required></textarea>
+                    </div>
+                    
+                    <div>
+                        <label for="inspiration_image" class="block text-left text-sm font-medium text-gray-700 mb-1">Upload an inspiration image (optional)</label>
+                        <input type="file" id="inspiration_image" name="inspiration_image" accept="image/*" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[--accent-color] transition-colors duration-300">
+                    </div>
+                    
                     <button type="submit" class="w-full bg-[--accent-color] hover:bg-[#8E4B31] text-white font-semibold py-4 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
                         Submit Request
                     </button>
@@ -295,29 +325,38 @@
         form.addEventListener('submit', async function(event) {
             event.preventDefault();
 
+            // First, perform native browser validation.
+            if (!form.checkValidity()) {
+                statusMessage.innerHTML = '<p class="text-red-600 font-semibold">Please fill out all mandatory fields before submitting.</p>';
+                return;
+            }
+
             const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
 
             statusMessage.innerHTML = '<p class="text-gray-500">Sending...</p>';
             
             try {
                 const response = await fetch(form.action, {
                     method: 'POST',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
-                    body: JSON.stringify(data)
+                    body: formData // Pass the FormData object directly
                 });
 
                 if (response.ok) {
                     statusMessage.innerHTML = '<p class="text-green-600 font-semibold">Thank you for your submission! We will get back to you soon.</p>';
                     form.reset();
                 } else {
-                    statusMessage.innerHTML = '<p class="text-red-600 font-semibold">Something went wrong. Please try again later.</p>';
-                    console.error('Form submission failed:', response.statusText);
+                    const responseText = await response.text();
+                    let errorMessage = 'Something went wrong. Please try again later.';
+                    if (responseText) {
+                        errorMessage = responseText;
+                    } else if (response.status === 400) {
+                        errorMessage = 'The request was invalid. Please check your information and try again.';
+                    }
+                    statusMessage.innerHTML = `<p class="text-red-600 font-semibold">${errorMessage}</p>`;
+                    console.error('Form submission failed:', response.statusText, responseText);
                 }
             } catch (error) {
-                statusMessage.innerHTML = '<p class="text-red-600 font-semibold">Something went wrong. Please try again later.</p>';
+                statusMessage.innerHTML = '<p class="text-red-600 font-semibold">Something went wrong. Please check your internet connection and try again.</p>';
                 console.error('Fetch error:', error);
             }
         });
